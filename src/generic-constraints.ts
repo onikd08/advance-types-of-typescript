@@ -1,7 +1,7 @@
 interface Iinfo {
   name: string;
   age: number;
-  //isMarried: boolean;
+  isMarried: boolean;
 }
 
 interface IMandatory {
@@ -12,7 +12,7 @@ interface IMandatory {
 const userInfo: Iinfo = {
   name: "User 1",
   age: 40,
-  //isMarried: false,
+  isMarried: false,
 };
 
 const addProperty = <T extends IMandatory>(info: T) => {
